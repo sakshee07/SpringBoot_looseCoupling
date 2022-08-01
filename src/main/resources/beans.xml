@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!--comment-->
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id = "mathcheatObjectValue" class ="/LooseCoupling/src/main/java/MathCheat.java" >  </bean>
+
+<bean id = "student" class = "/LooseCoupling/src/main/java/Student.java">
+<property name="id" value = "120"></property>
+<property name="mathCheat" ref = "mathcheatObjectValue" > </property>
+</bean>
+
+
+<bean id = "anotherStudent" class = "/LooseCoupling/src/main/java/AnotherStudent.java">
+<property name="cheat" ref = "mathcheatObjectValue"> </property>
+</bean>
+
+</beans>
